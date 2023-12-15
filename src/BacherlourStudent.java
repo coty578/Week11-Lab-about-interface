@@ -11,6 +11,6 @@ public class BacherlourStudent extends Student implements ProjectScoreBehaviour 
 
     @Override
     float computeTotalScore() {
-        return 0;
+        return computeBaseScore() + projectScore();
     }
 }

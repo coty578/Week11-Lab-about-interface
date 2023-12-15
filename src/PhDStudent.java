@@ -12,6 +12,6 @@ public class PhDStudent extends MasterStudent implements ArticleScoreBehaviour {
     }
     @Override
     float computeTotalScore(){
-        return 0;
+        return computeBaseScore() + ArticleScore();
     }
 }

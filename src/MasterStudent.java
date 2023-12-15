@@ -13,6 +13,6 @@ public class MasterStudent extends Student implements ConferenceScoreBehaviour {
 
     @Override
     float computeTotalScore() {
-        return 0;
+        return computeBaseScore() + conferenceScore();
     }
 }
